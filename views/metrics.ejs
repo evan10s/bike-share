@@ -3,27 +3,23 @@
 
 <div class="ui grid">
     <div class="six wide column">
+
         <div class="ui statistic">
             <div class="label">
                 Avg Rental Duration
             </div>
-            <div class="value">
-                26
+            <div id="avg-rental-duration" class="value">
+
             </div>
+            <div id="avg-duration-loader" class="ui active centered inline loader"></div>
             <div class="label">
                 Mins
             </div>
         </div>
     </div>
     <div class="six wide column">
-        <div class="ui statistic">
-            <div class="value">
-                5,550
-            </div>
-            <div class="label">
-                Downloads
-            </div>
-        </div>
+        <p>Usage by day</p>
+        <canvas id="daily-usage" width="400" height="400"></canvas>
     </div>
     <div class="six wide column">
         <div class="ui statistic">
@@ -37,4 +33,5 @@
     </div>
 </div>
 
+<script src="/javascript/metrics.js"></script>
 <%- include('includes/footer')  -%>
