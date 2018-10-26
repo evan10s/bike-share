@@ -31,3 +31,6 @@ npm-debug.log
 
 # JetBrains
 .idea/
+
+# Semantic UI
+semantic/
