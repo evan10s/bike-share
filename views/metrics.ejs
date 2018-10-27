@@ -1,35 +1,57 @@
 <%- include('includes/header')  -%>
 <h1><%= title %></h1>
+<h3>7/7/2016 - 3/31/2017</h3>
 
 <div class="ui grid">
-    <div class="six wide column">
-
+    <div class="ten wide column">
         <div class="ui statistic">
             <div class="label">
                 Avg Rental Duration
             </div>
             <div id="avg-rental-duration" class="value">
+                25.92
+            </div>
+            <div class="label">
+                Minutes
+            </div>
+        </div>
+    </div>
 
-            </div>
-            <div id="avg-duration-loader" class="ui active centered inline loader"></div>
-            <div class="label">
-                Mins
-            </div>
-        </div>
-    </div>
-    <div class="six wide column">
-        <p>Usage by day</p>
-        <canvas id="daily-usage" width="400" height="400"></canvas>
-    </div>
-    <div class="six wide column">
+    <div class="ten wide column">
         <div class="ui statistic">
-            <div class="value">
-                5,550
-            </div>
             <div class="label">
-                Downloads
+                Total Trips
+            </div>
+            <div id="avg-rental-duration" class="value">
+                132,427
             </div>
         </div>
+    </div>
+
+    <div class="ten wide column">
+        <div class="ui statistic">
+            <div class="label">
+                # Bikes
+            </div>
+            <div id="avg-rental-duration" class="value">
+                763
+            </div>
+        </div>
+    </div>
+    <div class="sixteen wide column">
+        <h3>Usage by day</h3>
+        <table class="ui celled table">
+            <thead>
+                <tr>
+                    <th>Weekday</th>
+                    <th>Total Trips</th>
+                    <th>Change from Previous Day</th>
+                </tr>
+            </thead>
+            <tbody id="weekday-stats">
+
+            </tbody>
+        </table>
     </div>
 </div>
 
